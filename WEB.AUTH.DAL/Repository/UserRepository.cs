@@ -36,12 +36,12 @@ public class UserRepository: IUserRepository
         }
     }
 
-    public async Task<UserEntity> Creat(CreateDTO entity)
+    public async Task<UserEntity> Creat(UserEntity entity)
     {
         try
         {
             entity.Password = _passwordHasher.HashPassword(entity.Password);
-            
+
             await _db.User.AddAsync(entity);
             await _db.SaveChangesAsync();
 

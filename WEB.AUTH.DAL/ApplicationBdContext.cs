@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WEB.AUTH.Domain;
+using WEB.AUTH.Domain.DTO;
 
 namespace WEB.AUTH.DAL;
 

@@ -72,16 +72,23 @@ public class UerController : ControllerBase
         }
         
         [HttpPost]
-        public Task<ActionResult<UserDTO>> Create(CreateDTO createDto)
+        public async Task<ActionResult<UserDTO>> Create(CreateDTO createDto)
         {
             try
             {
-                var user = await _service.Create(createDto);
+                var userEntity = new UserEntity(createDto);
+                var user = await _service.Create(userEntity);
+                var userDto = new UserDTO(user);
+
+                return Ok(userDto);
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Console.WriteLine(e);
-                throw;
+                Console.WriteLine(ex);
+                // Return an error response with a meaningful error message
+                return StatusCode(StatusCodes
+                        .Status500InternalServerError,
+                    "Internal server error.");
             }
         }
 
