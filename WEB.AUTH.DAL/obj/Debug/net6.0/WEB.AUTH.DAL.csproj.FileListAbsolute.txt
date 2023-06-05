@@ -1,0 +1,15 @@
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/bin/Debug/net6.0/WEB.AUTH.DAL.deps.json
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/bin/Debug/net6.0/WEB.AUTH.DAL.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/bin/Debug/net6.0/ref/WEB.AUTH.DAL.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/bin/Debug/net6.0/WEB.AUTH.DAL.pdb
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/obj/Debug/net6.0/WEB.AUTH.DAL.csproj.AssemblyReference.cache
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/obj/Debug/net6.0/WEB.AUTH.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/obj/Debug/net6.0/WEB.AUTH.DAL.AssemblyInfoInputs.cache
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/obj/Debug/net6.0/WEB.AUTH.DAL.AssemblyInfo.cs
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/obj/Debug/net6.0/WEB.AUTH.DAL.csproj.CoreCompileInputs.cache
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/obj/Debug/net6.0/WEB.AUTH.DAL.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/obj/Debug/net6.0/ref/WEB.AUTH.DAL.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/obj/Debug/net6.0/WEB.AUTH.DAL.pdb
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/bin/Debug/net6.0/WEB.AUTH.Domain.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/bin/Debug/net6.0/WEB.AUTH.Domain.pdb
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/obj/Debug/net6.0/WEB.AUTH.DAL.csproj.CopyComplete

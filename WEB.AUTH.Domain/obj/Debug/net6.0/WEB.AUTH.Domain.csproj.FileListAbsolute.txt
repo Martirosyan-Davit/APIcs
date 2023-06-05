@@ -1,0 +1,12 @@
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/obj/Debug/net6.0/WEB.AUTH.Domain.csproj.AssemblyReference.cache
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/obj/Debug/net6.0/WEB.AUTH.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/obj/Debug/net6.0/WEB.AUTH.Domain.AssemblyInfoInputs.cache
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/obj/Debug/net6.0/WEB.AUTH.Domain.AssemblyInfo.cs
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/obj/Debug/net6.0/WEB.AUTH.Domain.csproj.CoreCompileInputs.cache
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/bin/Debug/net6.0/WEB.AUTH.Domain.deps.json
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/bin/Debug/net6.0/WEB.AUTH.Domain.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/bin/Debug/net6.0/ref/WEB.AUTH.Domain.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/bin/Debug/net6.0/WEB.AUTH.Domain.pdb
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/obj/Debug/net6.0/WEB.AUTH.Domain.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/obj/Debug/net6.0/ref/WEB.AUTH.Domain.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/obj/Debug/net6.0/WEB.AUTH.Domain.pdb

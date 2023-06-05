@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "7KSBenUIGjBDOvjMfBxHJtdsjg3s7BJnCgL20qNmkzM=",
+  "Source": "WEB.AUTH",
+  "BasePath": "_content/WEB.AUTH",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
