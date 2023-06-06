@@ -25,7 +25,7 @@ public class UserEntity : BaseEntity
         this.Password = userDto.Password;
     }
     
-    public UserEntity(CreateDTO createDto)
+    public UserEntity(CreatUserDTO createDto)
     {
         this.Name = createDto.Name;
         this.Email = createDto.Email;

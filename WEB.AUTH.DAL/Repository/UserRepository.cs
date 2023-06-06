@@ -40,6 +40,12 @@ public class UserRepository: IUserRepository
     {
         try
         {
+            var userEntity = await _db.User.FirstOrDefaultAsync(u => u.Email == entity.Email);
+            if (userEntity != null)
+            {
+                throw new Exception("User already created.");
+            }
+            
             entity.Password = _passwordHasher.HashPassword(entity.Password);
 
             await _db.User.AddAsync(entity);
@@ -102,15 +108,15 @@ public class UserRepository: IUserRepository
         }
     }
 
-    public async Task<UserEntity> Login(UserEntity entity)
+    public async Task<UserEntity> Login(LoginDTO loginDto)
     {
-        var userEntity = await _db.User.FirstOrDefaultAsync(u => u.Email == entity.Email);
+        var userEntity = await _db.User.FirstOrDefaultAsync(u => u.Email == loginDto.Email);
         if (userEntity == null)
         {
             throw new Exception("User not found.");
         }
 
-        bool valid = _passwordHasher.VerifyPassword(entity.Password, userEntity.Password);
+        var valid = _passwordHasher.VerifyPassword(loginDto.Password, userEntity.Password);
         if (!valid)
         {
             throw new Exception("Email or password incorrect.");

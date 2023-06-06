@@ -5,20 +5,16 @@ using WEB.AUTH.Service.Interfaces;
 
 namespace WEB.AUTH.Controllers;
 
-[ApiController]
-[Route("[controller]")]
-public class UerController : ControllerBase
-{
+
     [ApiController]
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
-        private readonly IService<UserEntity> _service;
+        private readonly IUserService<UserEntity> _userService;
         
-
-        public UserController(IService<UserEntity> service)
+        public UserController(IUserService<UserEntity> userService)
         {
-            _service = service;
+            _userService = userService;
             
         }
 
@@ -27,7 +23,7 @@ public class UerController : ControllerBase
         {
             try
             {
-                var users = await _service.GetAll();
+                var users = await _userService.GetAll();
 
                 var userDtos = new List<UserDTO>();
                 foreach (var user in users)
@@ -56,7 +52,7 @@ public class UerController : ControllerBase
         {
             try
             {
-                var user = await _service.GetById(id);
+                var user = await _userService.GetById(id);
                 var userDto = new UserDTO(user);
 
                 return Ok(userDto);
@@ -72,12 +68,12 @@ public class UerController : ControllerBase
         }
         
         [HttpPost]
-        public async Task<ActionResult<UserDTO>> Create(CreateDTO createDto)
+        public async Task<ActionResult<UserDTO>> Create(CreatUserDTO creatUserDto)
         {
             try
             {
-                var userEntity = new UserEntity(createDto);
-                var user = await _service.Create(userEntity);
+                var userEntity = new UserEntity(creatUserDto);
+                var user = await _userService.Create(userEntity);
                 var userDto = new UserDTO(user);
 
                 return Ok(userDto);
@@ -97,5 +93,4 @@ public class UerController : ControllerBase
     }
     
 
-}    
     

@@ -9,7 +9,7 @@ using WEB.AUTH.Service.Interfaces;
 
 namespace WEB.AUTH.Service.Implementation;
 
-public class UserService : IService<UserEntity>
+public class UserService : IUserService<UserEntity>
 {
     
     
@@ -36,13 +36,17 @@ public class UserService : IService<UserEntity>
     public async Task<UserEntity> Create(UserEntity entity)
     {
         
-            await _userRepository.Creat(entity);
-
-            return new UserEntity();
+        return await _userRepository.Creat(entity);
     }
     
     public Task<bool> Delete(Guid id)
     {
         return _userRepository.Delete(id);
+    }
+
+
+    public async Task<UserEntity> Login(LoginDTO loginDto)
+    {
+       return await _userRepository.Login(loginDto);
     }
 }
