@@ -1,8 +1,30 @@
 {
   "version": 2,
-  "dgSpecHash": "BmiHi3BjJmRHRohZ0By7BoTSzcTqkE5PftwH8OE10xBhAYCGkfC6xF3/erQ0DFOcd+2OSUV+cvFpjBv+2/hwwA==",
+  "dgSpecHash": "0DcQy4LkI85JsWSlfi3oySpu9YV29FzS2vUypDfrQRRM8QUvxc5y60nT7Xa+pT1vhDqYVos2U8Tq0WhVKkBKqg==",
   "success": true,
   "projectFilePath": "/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Domain/WEB.AUTH.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/veevee-soft/.nuget/packages/microsoft.aspnetcore.cryptography.internal/6.0.1/microsoft.aspnetcore.cryptography.internal.6.0.1.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/6.0.1/microsoft.aspnetcore.cryptography.keyderivation.6.0.1.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/6.0.1/microsoft.aspnetcore.identity.entityframeworkcore.6.0.1.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.entityframeworkcore/6.0.1/microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.1/microsoft.entityframeworkcore.abstractions.6.0.1.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.1/microsoft.entityframeworkcore.analyzers.6.0.1.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.entityframeworkcore.relational/6.0.1/microsoft.entityframeworkcore.relational.6.0.1.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.extensions.caching.abstractions/6.0.0/microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.extensions.caching.memory/6.0.0/microsoft.extensions.caching.memory.6.0.0.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.extensions.configuration.abstractions/6.0.0/microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.extensions.dependencyinjection/6.0.0/microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.extensions.identity.core/6.0.1/microsoft.extensions.identity.core.6.0.1.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.extensions.identity.stores/6.0.1/microsoft.extensions.identity.stores.6.0.1.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.extensions.logging/6.0.0/microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "/home/veevee-soft/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

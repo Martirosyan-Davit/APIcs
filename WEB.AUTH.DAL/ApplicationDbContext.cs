@@ -4,9 +4,9 @@ using WEB.AUTH.Domain.DTO;
 
 namespace WEB.AUTH.DAL;
 
-public class ApplicationBdContext : DbContext
+public class ApplicationDbContext : DbContext
 {
-    public ApplicationBdContext(DbContextOptions<ApplicationBdContext> options): base(options)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
     {
     }
 
@@ -15,5 +15,6 @@ public class ApplicationBdContext : DbContext
         modelBuilder.UseSerialColumns();
     }
 
+   
     public DbSet<UserEntity> User { get; set; }
 }

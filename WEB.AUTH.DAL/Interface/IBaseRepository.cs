@@ -8,5 +8,5 @@ public interface IBaseRepository<T>
     
     Task<T> Creat(T entity);
     
-    Task<bool> Delete(Guid id);
+    Task<bool> Delete(string id);
 }

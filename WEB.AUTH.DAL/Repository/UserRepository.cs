@@ -9,10 +9,10 @@ namespace WEB.AUTH.DAL.Repository;
 
 public class UserRepository: IUserRepository
 {
-    private readonly ApplicationBdContext _db;
+    private readonly ApplicationDbContext _db;
     private readonly PasswordHasher _passwordHasher;
 
-    public UserRepository(ApplicationBdContext db)
+    public UserRepository(ApplicationDbContext db)
     {
         _db = db; 
         _passwordHasher = new PasswordHasher();
@@ -46,7 +46,7 @@ public class UserRepository: IUserRepository
                 throw new Exception("User already created.");
             }
             
-            entity.Password = _passwordHasher.HashPassword(entity.Password);
+            entity.PasswordHash = _passwordHasher.HashPassword(entity.PasswordHash);
 
             await _db.User.AddAsync(entity);
             await _db.SaveChangesAsync();
@@ -62,7 +62,7 @@ public class UserRepository: IUserRepository
         }
     }
 
-    public async Task<bool> Delete(Guid id)
+    public async Task<bool> Delete(string id)
     {
         try
         {
@@ -88,7 +88,7 @@ public class UserRepository: IUserRepository
 
    
 
-    public async Task<UserEntity> GetById(Guid id)
+    public async Task<UserEntity> GetById(string id)
     {
         try
         {
@@ -107,7 +107,7 @@ public class UserRepository: IUserRepository
             throw new Exception(ex.Message);
         }
     }
-
+    
     public async Task<UserEntity> Login(LoginDTO loginDto)
     {
         var userEntity = await _db.User.FirstOrDefaultAsync(u => u.Email == loginDto.Email);
@@ -116,7 +116,7 @@ public class UserRepository: IUserRepository
             throw new Exception("User not found.");
         }
 
-        var valid = _passwordHasher.VerifyPassword(loginDto.Password, userEntity.Password);
+        var valid = _passwordHasher.VerifyPassword(loginDto.Password, userEntity.PasswordHash);
         if (!valid)
         {
             throw new Exception("Email or password incorrect.");

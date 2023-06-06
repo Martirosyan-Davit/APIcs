@@ -7,13 +7,10 @@ namespace WEB.AUTH.Service.Implementation;
 
 public class AuthService: IAuthService<UserEntity>
 {
-    private readonly IUserRepository _userRepository;
     private readonly IUserService<UserEntity> _userService;
 
-    public AuthService(IUserRepository userRepository, 
-        IUserService<UserEntity> userService)
+    public AuthService(IUserService<UserEntity> userService)
     {
-        _userRepository = userRepository;
         _userService = userService;
     }
 

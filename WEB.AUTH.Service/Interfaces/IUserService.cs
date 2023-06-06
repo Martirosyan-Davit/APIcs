@@ -7,8 +7,8 @@ public interface IUserService<T>
 {
     Task<T> Login(LoginDTO loginDto);
     Task<List<T>> GetAll();
-    Task<T> GetById(Guid id);
+    Task<T> GetById(string id);
     Task<T> Create(T entity);
-    Task<bool> Delete(Guid id);
+    Task<bool> Delete(string id);
     
 }

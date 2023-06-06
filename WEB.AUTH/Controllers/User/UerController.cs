@@ -48,7 +48,7 @@ namespace WEB.AUTH.Controllers;
         }
         
         [HttpGet]
-        public async Task<ActionResult<UserDTO>> GetById(Guid id)
+        public async Task<ActionResult<UserDTO>> GetById(string id)
         {
             try
             {

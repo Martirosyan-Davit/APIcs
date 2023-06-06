@@ -28,7 +28,7 @@ public class UserService : IUserService<UserEntity>
     }
     
 
-    public async Task<UserEntity> GetById(Guid id)
+    public async Task<UserEntity> GetById(string id)
     {
         return await _userRepository.GetById(id);
     }
@@ -39,7 +39,7 @@ public class UserService : IUserService<UserEntity>
         return await _userRepository.Creat(entity);
     }
     
-    public Task<bool> Delete(Guid id)
+    public Task<bool> Delete(string id)
     {
         return _userRepository.Delete(id);
     }

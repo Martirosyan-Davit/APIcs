@@ -36,3 +36,15 @@
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/obj/Debug/net6.0/ref/WEB.AUTH.dll
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/obj/Debug/net6.0/WEB.AUTH.pdb
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/obj/Debug/net6.0/WEB.AUTH.genruntimeconfig.cache
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll

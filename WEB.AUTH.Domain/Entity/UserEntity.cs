@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 using WEB.AUTH.Domain.DTO;
 using WEB.AUTH.Domain.Enum;
 
@@ -7,29 +8,30 @@ namespace WEB.AUTH.Domain;
 public class UserEntity : BaseEntity
 {
     
-    public string Name { get; set; }
-    [Required]
-    public string Email { get; set; }
-    [Required]
-    public string Password { get; set; }
+    public override string UserName { get; set; }
+    public override string Email { get; set; } 
     
-    public RoleType Role { get; set; }
+    public override string PasswordHash { get; set; }
+    
+    // public RoleType Role { get; set; }
     
     public UserEntity() {}
-
-
+    
+    
     public UserEntity(UserDTO userDto)
     {
-        this.Name = userDto.Name;
-        this.Email = userDto.Email;
-        this.Password = userDto.Password;
+        UserName = userDto.UserName;
+        Email = userDto.Email;
+        Id = userDto.Id;
     }
     
     public UserEntity(CreatUserDTO createDto)
     {
-        this.Name = createDto.Name;
-        this.Email = createDto.Email;
-        this.Password = createDto.Password;
+        UserName = createDto.Name;
+        Email = createDto.Email;
+        PasswordHash = createDto.Password;
+        CreatedAt = DateTime.Now;
+        UpdatedAt = DateTime.Now;
     }
     
     
