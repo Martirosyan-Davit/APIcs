@@ -33,10 +33,10 @@ public class UserService : IUserService<UserEntity>
         return await _userRepository.GetById(id);
     }
 
-    public async Task<UserEntity> Create(UserEntity entity)
+    public async Task<UserEntity> Create(CreatUserDTO creatUserDTO)
     {
-        
-        return await _userRepository.Creat(entity);
+        var userEntity = new UserEntity(creatUserDTO);
+        return await _userRepository.Creat(userEntity);
     }
     
     public Task<bool> Delete(string id)

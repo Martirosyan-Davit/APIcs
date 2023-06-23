@@ -1,19 +1,23 @@
-using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations.Schema;
 using WEB.AUTH.Domain.DTO;
 using WEB.AUTH.Domain.Enum;
 
 namespace WEB.AUTH.Domain;
 
+[Table("user")]
 public class UserEntity : BaseEntity
 {
-    
+    [Column]
     public override string UserName { get; set; }
+    [Column]
     public override string Email { get; set; } 
-    
+    [Column]
     public override string PasswordHash { get; set; }
+    [Column]
+    public RoleType Role { get; set; }
     
-    // public RoleType Role { get; set; }
+    // One-to-many relationship with posts
+    public List<PostEntity>? Posts { get; set; }
     
     public UserEntity() {}
     

@@ -14,11 +14,24 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+// Build the configuration
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.Development.json")
+    .Build();
+
+// var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+var connectionString = configuration.GetConnectionString("DefaultConnection");
+
+Console.WriteLine(connectionString);
+Console.WriteLine(123435421312433);
 
 // Add services for your DbContext
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(connectionString));
+// builder.Services.AddDbContext<ApplicationDbContext>(options =>
+//     options.UseNpgsql(connectionString));
+builder.Services.AddEntityFrameworkNpgsql().AddDbContext<ApplicationDbContext>(opt =>
+    opt.UseNpgsql(connectionString));
+
 
 var app = builder.Build();
 
@@ -30,6 +43,7 @@ if (app.Environment.IsDevelopment())
     app.UseHttpsRedirection();
 
 }
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 

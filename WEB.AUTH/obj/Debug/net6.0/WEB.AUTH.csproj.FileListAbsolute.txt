@@ -48,3 +48,5 @@
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Humanizer.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll

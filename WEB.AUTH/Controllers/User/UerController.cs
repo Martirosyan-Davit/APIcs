@@ -47,7 +47,7 @@ namespace WEB.AUTH.Controllers;
 
         }
         
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<ActionResult<UserDTO>> GetById(string id)
         {
             try
@@ -72,8 +72,8 @@ namespace WEB.AUTH.Controllers;
         {
             try
             {
-                var userEntity = new UserEntity(creatUserDto);
-                var user = await _userService.Create(userEntity);
+                // var userEntity = new UserEntity(creatUserDto);
+                var user = await _userService.Create(creatUserDto);
                 var userDto = new UserDTO(user);
 
                 return Ok(userDto);

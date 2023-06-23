@@ -6,8 +6,8 @@ using WEB.AUTH.Service.Interfaces;
 namespace WEB.AUTH.Controllers;
 
 
+[Route("api/[controller]")]
 [ApiController]
-[Route("[auth]")]
 public class AuthController : ControllerBase
 {
     private readonly IAuthService<UserEntity> _authService;
@@ -16,20 +16,23 @@ public class AuthController : ControllerBase
     {
         _authService = authService;
     }
-
-    [HttpPost]
+    
+    
+    [HttpPost("Register")]
     public async Task<ActionResult<UserDTO>> RegisterUser(CreatUserDTO creatUserDto)
     {
-        var user = await _authService.RegisterUser(creatUserDto);
-
+        var user = await _authService
+            .RegisterUser(creatUserDto);
+        
         return Ok(new UserDTO(user));
     }
     
-    [HttpPost]
+    [HttpPost("login")]
     public async Task<ActionResult<UserDTO>> loginUser(LoginDTO loginDto)
     {
-        var user = await _authService.loginUser(loginDto);
-
+        var user = await _authService
+            .loginUser(loginDto);
+        
         return Ok(new UserDTO(user));
     }
 }

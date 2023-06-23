@@ -108,7 +108,8 @@ public class UserRepository: IUserRepository
         }
     }
     
-    public async Task<UserEntity> Login(LoginDTO loginDto)
+    // change move this function in {AuthService}   TODO
+    public async Task<UserEntity> Login(LoginDTO loginDto) 
     {
         var userEntity = await _db.User.FirstOrDefaultAsync(u => u.Email == loginDto.Email);
         if (userEntity == null)

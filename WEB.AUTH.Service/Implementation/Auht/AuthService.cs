@@ -17,8 +17,8 @@ public class AuthService: IAuthService<UserEntity>
 
     public Task<UserEntity> RegisterUser(CreatUserDTO creatUserDto)
     {
-        var userEntity = new UserEntity(creatUserDto);
-        var User = _userService.Create(userEntity);
+
+        var User = _userService.Create(creatUserDto);
 
         return User;
     }

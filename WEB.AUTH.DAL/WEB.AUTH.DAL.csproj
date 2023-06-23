@@ -15,4 +15,8 @@
       <ProjectReference Include="..\WEB.AUTH.Domain\WEB.AUTH.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Migrations\" />
+    </ItemGroup>
+
 </Project>
