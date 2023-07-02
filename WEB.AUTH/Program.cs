@@ -1,8 +1,8 @@
-using System.Text;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore;
-using Npgsql;
 using WEB.AUTH.DAL;
+using WEB.AUTH.Service;
+using WEB.AUTH.Service.Implementation;
+using WEB.AUTH.Service.Interfaces;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,24 +14,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Build the configuration
-var configuration = new ConfigurationBuilder()
-    .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("appsettings.Development.json")
-    .Build();
-
-// var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-var connectionString = configuration.GetConnectionString("DefaultConnection");
-
-Console.WriteLine(connectionString);
-Console.WriteLine(123435421312433);
-
 // Add services for your DbContext
-// builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//     options.UseNpgsql(connectionString));
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<ApplicationDbContext>(opt =>
-    opt.UseNpgsql(connectionString));
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddDal();
+builder.Services.AddBLL();
 
 var app = builder.Build();
 
@@ -40,12 +29,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.UseHttpsRedirection();
-
 }
-app.UseSwaggerUI();
-
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

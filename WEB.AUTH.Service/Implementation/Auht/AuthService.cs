@@ -1,15 +1,14 @@
-using WEB.AUTH.DAL.Interface;
 using WEB.AUTH.Domain;
 using WEB.AUTH.Domain.DTO;
 using WEB.AUTH.Service.Interfaces;
 
 namespace WEB.AUTH.Service.Implementation;
 
-public class AuthService: IAuthService<UserEntity>
+public class AuthService: IAuthService
 {
-    private readonly IUserService<UserEntity> _userService;
+    private readonly IUserService _userService;
 
-    public AuthService(IUserService<UserEntity> userService)
+    public AuthService(IUserService userService)
     {
         _userService = userService;
     }

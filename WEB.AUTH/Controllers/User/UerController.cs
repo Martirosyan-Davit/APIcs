@@ -10,9 +10,9 @@ namespace WEB.AUTH.Controllers;
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
-        private readonly IUserService<UserEntity> _userService;
+        private readonly IUserService _userService;
         
-        public UserController(IUserService<UserEntity> userService)
+        public UserController(IUserService userService)
         {
             _userService = userService;
             

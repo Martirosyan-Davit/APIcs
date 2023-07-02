@@ -1,19 +1,12 @@
-using System.Net;
-using System.Runtime.CompilerServices;
 using WEB.AUTH.DAL.Interface;
-using WEB.AUTH.DAL.Repository;
 using WEB.AUTH.Domain;
 using WEB.AUTH.Domain.DTO;
-using WEB.AUTH.Domain.Enum;
 using WEB.AUTH.Service.Interfaces;
 
 namespace WEB.AUTH.Service.Implementation;
 
-public class UserService : IUserService<UserEntity>
+public class UserService : IUserService
 {
-    
-    
-    
     private readonly IUserRepository _userRepository;
 
     public UserService(IUserRepository userRepository)
@@ -26,11 +19,10 @@ public class UserService : IUserService<UserEntity>
     {
         return await _userRepository.Select();
     }
-    
 
-    public async Task<UserEntity> GetById(string id)
+    public Task<UserEntity> GetById(string id)
     {
-        return await _userRepository.GetById(id);
+        throw new NotImplementedException();
     }
 
     public async Task<UserEntity> Create(CreatUserDTO creatUserDTO)

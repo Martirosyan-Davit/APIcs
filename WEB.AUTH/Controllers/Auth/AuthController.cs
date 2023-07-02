@@ -10,9 +10,9 @@ namespace WEB.AUTH.Controllers;
 [ApiController]
 public class AuthController : ControllerBase
 {
-    private readonly IAuthService<UserEntity> _authService;
+    private readonly IAuthService _authService;
 
-    public AuthController(IAuthService<UserEntity> authService)
+    public AuthController(IAuthService authService)
     {
         _authService = authService;
     }

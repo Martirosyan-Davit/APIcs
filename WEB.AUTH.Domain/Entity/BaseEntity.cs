@@ -1,16 +1,13 @@
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+
 using Microsoft.AspNetCore.Identity;
+using WEB.AUTH.Domain.Helper;
 
 namespace WEB.AUTH.Domain;
 
-public abstract class BaseEntity: IdentityUser
+public abstract class BaseEntity : EntityHelper
 {
-    [Key]
     public override string Id { get; set; }
-    [Column]
     public DateTime CreatedAt { get; set; }
-    [Column]
     public DateTime UpdatedAt { get; set; }
 
     

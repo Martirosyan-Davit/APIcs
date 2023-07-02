@@ -1,4 +1,3 @@
-using System.Net;
 using Microsoft.EntityFrameworkCore;
 using WEB.AUTH.DAL.Helper;
 using WEB.AUTH.DAL.Interface;

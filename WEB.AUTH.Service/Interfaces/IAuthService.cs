@@ -1,10 +1,11 @@
+using WEB.AUTH.Domain;
 using WEB.AUTH.Domain.DTO;
 
 namespace WEB.AUTH.Service.Interfaces;
 
-public interface IAuthService<T>
+public interface IAuthService
 {
-    Task<T> RegisterUser(CreatUserDTO creatUserDto);
+    Task<UserEntity> RegisterUser(CreatUserDTO creatUserDto);
     
-    Task<T> loginUser(LoginDTO loginDto);
+    Task<UserEntity> loginUser(LoginDTO loginDto);
 }

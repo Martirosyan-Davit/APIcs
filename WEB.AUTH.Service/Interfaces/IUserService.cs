@@ -3,12 +3,11 @@ using WEB.AUTH.Domain.DTO;
 
 namespace WEB.AUTH.Service.Interfaces;
 
-public interface IUserService<T>
+public interface IUserService
 {
-    Task<T> Login(LoginDTO loginDto);
-    Task<List<T>> GetAll();
-    Task<T> GetById(string id);
-    Task<T> Create(CreatUserDTO entity);
+    Task<UserEntity> Login(LoginDTO loginDto);
+    Task<List<UserEntity>> GetAll();
+    Task<UserEntity> GetById(string id);
+    Task<UserEntity> Create(CreatUserDTO entity);
     Task<bool> Delete(string id);
-    
 }
