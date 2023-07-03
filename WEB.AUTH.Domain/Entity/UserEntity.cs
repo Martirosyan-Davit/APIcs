@@ -10,7 +10,7 @@ public class UserEntity : BaseEntity
     public  string Email { get; set; } 
     
     public  string PasswordHash { get; set; }
-    
+
     public RoleType Role { get; set; }
     
     // One-to-many relationship with posts
@@ -28,6 +28,7 @@ public class UserEntity : BaseEntity
     public UserEntity(CreatUserDTO createDto)
     {
         UserName = createDto.Name;
+        Role = RoleType.USER;
         Email = createDto.Email;
         PasswordHash = createDto.Password;
         CreatedAt = DateTime.UtcNow;

@@ -12,7 +12,7 @@ using WEB.AUTH.DAL;
 namespace WEB.AUTH.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230702122501_InitialMigration")]
+    [Migration("20230703212030_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
