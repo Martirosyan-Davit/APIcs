@@ -23,6 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Services\WEB.AUTH.Services\WEB.AUTH.Services.csproj" />
       <ProjectReference Include="..\WEB.AUTH.Service\WEB.AUTH.Service.csproj" />
     </ItemGroup>
     

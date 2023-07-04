@@ -106,8 +106,6 @@ public class UserRepository: IUserRepository
             throw new Exception(ex.Message);
         }
     }
-    
-    // change move this function in {AuthService}   TODO
     public async Task<UserEntity> Login(LoginDTO loginDto) 
     {
         var userEntity = await _db.User.FirstOrDefaultAsync(u => u.Email == loginDto.Email);

@@ -1,9 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using WEB.AUTH.DAL;
 using WEB.AUTH.Service;
-using WEB.AUTH.Service.Implementation;
-using WEB.AUTH.Service.Interfaces;
-
+using WEB.AUTH.Services.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +19,8 @@ builder.Services.AddEntityFrameworkNpgsql().AddDbContext<ApplicationDbContext>(o
 // builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddDal();
 builder.Services.AddBLL();
+builder.Services.ConfigureJWT();
+builder.Configuration.BindModel(builder.Services);
 
 var app = builder.Build();
 
