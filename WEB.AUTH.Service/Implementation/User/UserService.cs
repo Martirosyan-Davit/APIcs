@@ -15,14 +15,14 @@ public class UserService : IUserService
     }
 
 
-    public  async Task<List<UserEntity>> GetAll()
+    public async Task<List<UserEntity>> GetAll()
     {
         return await _userRepository.Select();
     }
 
-    public Task<UserEntity> GetById(string id)
+    public async Task<UserEntity> GetById(string id)
     {
-        throw new NotImplementedException();
+        return await _userRepository.GetById(id);
     }
 
     public async Task<UserEntity> Create(CreatUserDTO creatUserDTO)
@@ -36,9 +36,8 @@ public class UserService : IUserService
         return _userRepository.Delete(id);
     }
 
-
     public async Task<UserEntity> Login(LoginDTO loginDto)
     {
-       return await _userRepository.Login(loginDto);
+        return await _userRepository.Login(loginDto);
     }
 }

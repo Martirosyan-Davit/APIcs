@@ -15,3 +15,5 @@
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Service/obj/Debug/net6.0/WEB.AUTH.Service.dll
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Service/obj/Debug/net6.0/ref/WEB.AUTH.Service.dll
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Service/obj/Debug/net6.0/WEB.AUTH.Service.pdb
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Service/bin/Debug/net6.0/WEB.AUTH.Managers.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Service/bin/Debug/net6.0/WEB.AUTH.Managers.pdb

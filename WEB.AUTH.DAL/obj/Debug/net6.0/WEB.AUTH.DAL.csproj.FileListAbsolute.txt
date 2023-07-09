@@ -13,3 +13,5 @@
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/bin/Debug/net6.0/WEB.AUTH.Domain.dll
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/bin/Debug/net6.0/WEB.AUTH.Domain.pdb
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/obj/Debug/net6.0/WEB.AUTH.DAL.csproj.CopyComplete
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/bin/Debug/net6.0/WEB.AUTH.Managers.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.DAL/bin/Debug/net6.0/WEB.AUTH.Managers.pdb

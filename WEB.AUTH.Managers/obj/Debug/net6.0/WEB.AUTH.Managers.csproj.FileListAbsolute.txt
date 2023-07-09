@@ -1,0 +1,12 @@
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Managers/bin/Debug/net6.0/WEB.AUTH.Managers.deps.json
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Managers/bin/Debug/net6.0/WEB.AUTH.Managers.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Managers/bin/Debug/net6.0/ref/WEB.AUTH.Managers.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Managers/bin/Debug/net6.0/WEB.AUTH.Managers.pdb
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Managers/obj/Debug/net6.0/WEB.AUTH.Managers.csproj.AssemblyReference.cache
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Managers/obj/Debug/net6.0/WEB.AUTH.Managers.GeneratedMSBuildEditorConfig.editorconfig
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Managers/obj/Debug/net6.0/WEB.AUTH.Managers.AssemblyInfoInputs.cache
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Managers/obj/Debug/net6.0/WEB.AUTH.Managers.AssemblyInfo.cs
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Managers/obj/Debug/net6.0/WEB.AUTH.Managers.csproj.CoreCompileInputs.cache
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Managers/obj/Debug/net6.0/WEB.AUTH.Managers.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Managers/obj/Debug/net6.0/ref/WEB.AUTH.Managers.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH.Managers/obj/Debug/net6.0/WEB.AUTH.Managers.pdb

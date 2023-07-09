@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using WEB.AUTH.DAL;
+using WEB.AUTH.Managers;
+using WEB.AUTH.Managers.Configurations;
 using WEB.AUTH.Service;
-using WEB.AUTH.Services.Configurations;
+using WEB.AUTH.DAL.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,8 +21,11 @@ builder.Services.AddEntityFrameworkNpgsql().AddDbContext<ApplicationDbContext>(o
 // builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddDal();
 builder.Services.AddBLL();
-builder.Services.ConfigureJWT();
+builder.Services.AddJwtAuthentication();
 builder.Configuration.BindModel(builder.Services);
+builder.Services.AddLogger();
+builder.Services.AddLoggerFactory();
+builder.Services.AddAuthorizationManager();
 
 var app = builder.Build();
 
@@ -31,6 +36,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 // app.UseHttpsRedirection();
+
+app.AddMiddleware();
 
 app.UseAuthorization();
 

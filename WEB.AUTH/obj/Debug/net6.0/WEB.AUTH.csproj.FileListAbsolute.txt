@@ -53,5 +53,5 @@
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
-/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/WEB.AUTH.Services.dll
-/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/WEB.AUTH.Services.pdb
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/WEB.AUTH.Managers.dll
+/home/veevee-soft/RiderProjects/WEB.AUTH/WEB.AUTH/bin/Debug/net6.0/WEB.AUTH.Managers.pdb

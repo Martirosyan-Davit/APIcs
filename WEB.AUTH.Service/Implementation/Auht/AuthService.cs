@@ -1,5 +1,6 @@
 using WEB.AUTH.Domain;
 using WEB.AUTH.Domain.DTO;
+using WEB.AUTH.Managers.Authorization.Intrfaces;
 using WEB.AUTH.Service.Interfaces;
 
 namespace WEB.AUTH.Service.Implementation;
@@ -7,25 +8,29 @@ namespace WEB.AUTH.Service.Implementation;
 public class AuthService: IAuthService
 {
     private readonly IUserService _userService;
+    private readonly IAuthorizationManager _authorizationManager;
 
-    public AuthService(IUserService userService)
+    public AuthService(IUserService userService, IAuthorizationManager authorizationManager)
     {
         _userService = userService;
+        _authorizationManager = authorizationManager;
     }
 
 
-    public Task<UserEntity> RegisterUser(CreatUserDTO creatUserDto)
+    public async Task<LoginPayloadDTO> RegisterUser(CreatUserDTO creatUserDto)
     {
+        var User = await _userService.Create(creatUserDto);
+        string Token = _authorizationManager.GenerateToken(User.Id);
+        var CorrentUser = new UserDTO(User);
 
-        var User = _userService.Create(creatUserDto);
-
-        return User;
+        return new LoginPayloadDTO(CorrentUser, Token);
     }
-
-    public async Task<UserEntity> loginUser(LoginDTO loginDto)
+    public async Task<LoginPayloadDTO> loginUser(LoginDTO loginDto)
     {
         var user = await _userService.Login(loginDto);
+        string Token = _authorizationManager.GenerateToken(user.Id);
+        var CurrentUser = new UserDTO(user);
 
-        return user;
+        return new LoginPayloadDTO(CurrentUser, Token);
     }
 }

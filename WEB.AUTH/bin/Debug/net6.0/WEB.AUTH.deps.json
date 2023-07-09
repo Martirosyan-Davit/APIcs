@@ -11,8 +11,8 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.0",
           "Swashbuckle.AspNetCore": "6.2.3",
-          "WEB.AUTH.Service": "1.0.0",
-          "WEB.AUTH.Services": "1.0.0"
+          "WEB.AUTH.Managers": "1.0.0",
+          "WEB.AUTH.Service": "1.0.0"
         },
         "runtime": {
           "WEB.AUTH.dll": {}
@@ -437,7 +437,8 @@
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.EntityFrameworkCore": "6.0.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.1",
-          "WEB.AUTH.Domain": "1.0.0"
+          "WEB.AUTH.Domain": "1.0.0",
+          "WEB.AUTH.Managers": "1.0.0"
         },
         "runtime": {
           "WEB.AUTH.DAL.dll": {}
@@ -451,6 +452,19 @@
           "WEB.AUTH.Domain.dll": {}
         }
       },
+      "WEB.AUTH.Managers/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.1",
+          "Microsoft.Extensions.Configuration": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0",
+          "Microsoft.Extensions.Logging": "6.0.0",
+          "Swashbuckle.AspNetCore": "6.2.3",
+          "System.IdentityModel.Tokens.Jwt": "6.30.1"
+        },
+        "runtime": {
+          "WEB.AUTH.Managers.dll": {}
+        }
+      },
       "WEB.AUTH.Service/1.0.0": {
         "dependencies": {
           "WEB.AUTH.DAL": "1.0.0",
@@ -458,18 +472,6 @@
         },
         "runtime": {
           "WEB.AUTH.Service.dll": {}
-        }
-      },
-      "WEB.AUTH.Services/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.1",
-          "Microsoft.Extensions.Configuration": "6.0.0",
-          "Microsoft.Extensions.DependencyInjection": "7.0.0",
-          "Swashbuckle.AspNetCore": "6.2.3",
-          "System.IdentityModel.Tokens.Jwt": "6.30.1"
-        },
-        "runtime": {
-          "WEB.AUTH.Services.dll": {}
         }
       }
     }
@@ -882,12 +884,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "WEB.AUTH.Service/1.0.0": {
+    "WEB.AUTH.Managers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WEB.AUTH.Services/1.0.0": {
+    "WEB.AUTH.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

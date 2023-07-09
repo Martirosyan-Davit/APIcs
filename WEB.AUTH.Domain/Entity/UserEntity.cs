@@ -34,7 +34,4 @@ public class UserEntity : BaseEntity
         CreatedAt = DateTime.UtcNow;
         UpdatedAt = DateTime.UtcNow;
     }
-    
-    
-    
 }
